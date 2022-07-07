@@ -21,5 +21,5 @@ module.exports = withPWA({
     },
   },
   assetPrefix: isProd ? '/logindemo/' : '',
-  basePath: isProd ? '/logindemo/' : '',
+  basePath: isProd ? '/logindemo' : '',
 });
