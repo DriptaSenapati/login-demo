@@ -8,8 +8,8 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="manifest" href={isProd ? `${process.env.NEXTJS_PUBLIC_FAVICON}/manifest.json` : '/manifest.json'}/>
-          <link rel="apple-touch-icon" href={isProd ? `${process.env.NEXTJS_PUBLIC_FAVICON}/icon.png` : '/icon.png'}></link>
+          <link rel="manifest" href={isProd ? `${process.env.NEXT_PUBLIC_FAVICON}/manifest.json` : '/manifest.json'}/>
+          <link rel="apple-touch-icon" href={isProd ? `${process.env.NEXT_PUBLIC_FAVICON}/icon.png` : '/icon.png'}></link>
           <meta name="theme-color" content="#fff" />
         </Head>
         <body>
