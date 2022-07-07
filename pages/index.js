@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   const isProd = process.env.NODE_ENV === 'production';
+  console.log(process.env.NEXT_PUBLIC_FAVICON)
 
   return (
     <div className={styles.container}>
