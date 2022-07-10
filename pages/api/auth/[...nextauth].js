@@ -9,9 +9,9 @@ export default NextAuth({
             credentials: {
                 email: { label: "Email", type: "text" },
                 password: { label: "Password", type: "password" }
-            },
+            }, 
             async authorize(credentials, req) {
-                const res = await fetch(`${process.env.NEXTAUTH_URL}/api/login`, {
+                const res = await fetch(`${process.env.NODE_ENV === "development" ? process.env.NEXTAUTH_URL : process.env.VERCEL_URL}/api/login`, {
                     method: 'POST',
                     body: JSON.stringify({
                         email: credentials.email,
