@@ -7,7 +7,7 @@ import { useSession, signIn, signOut } from "next-auth/react"
 
 const Navbar = () => {
     const { data: session } = useSession();
-    
+    console.log(process.env.NEXT_PUBLIC_VERCEL_ENV === "development" ? process.env.NEXTAUTH_URL : process.env.NEXT_PUBLIC_VERCEL_URL);
     return (
         <div>
             <nav className={styles.nav}>
