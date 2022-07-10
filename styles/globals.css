@@ -23,3 +23,16 @@ a {
   padding: 10px;
   border-radius: 10px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+  background: rgba(202, 251, 255, 0.758);
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(179, 229, 232, 0.425);
+  border-radius: 10px;
+}

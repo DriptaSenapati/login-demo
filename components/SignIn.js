@@ -104,7 +104,7 @@ const SignIn = () => {
 
             // console.log(response);
             if (response.status === 200) {
-                router.push(response.url);
+                router.push(router.query.callbackUrl);
             }
         }
 

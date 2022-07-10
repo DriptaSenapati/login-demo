@@ -3,11 +3,13 @@ import Image from 'next/image';
 import styles from '../styles/Navbar.module.css';
 import Link from 'next/link';
 import { useSession, signIn, signOut } from "next-auth/react"
+import { useRouter } from 'next/router';
 
 
 const Navbar = () => {
     const { data: session } = useSession();
-    
+    const router = useRouter();
+
     return (
         <div>
             <nav className={styles.nav}>
@@ -26,11 +28,15 @@ const Navbar = () => {
                     </ul>
                 </div>
             </nav>
-            <button className={styles.btn} onClick={session ? signOut : signIn}>
-                {
-                    session ? "Log Out" : "Log In"
-                }
-            </button>
+            {
+                router.pathname !== "/login" &&
+                <button className={styles.btn} onClick={session ? signOut : signIn}>
+                    {
+                        session ? "Log Out" : "Log In"
+                    }
+                </button>
+            }
+
         </div>
     )
 }
