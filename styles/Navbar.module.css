@@ -1,0 +1,71 @@
+.nav {
+    height: auto;
+    padding: 10px 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 7px 19px -4px rgba(166, 217, 219, 0.75);
+    -webkit-box-shadow: 2px 7px 19px -4px rgba(166, 217, 219, 0.75);
+    -moz-box-shadow: 2px 7px 19px -4px rgba(166, 217, 219, 0.75);
+}
+
+.brandname {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-left: 15px;
+}
+
+.brand {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinkcontainer {
+    width: 50%;
+}
+
+.navlinkcontainer ul {
+    /* margin-right: 40px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+}
+
+.btn {
+    width: fit-content;
+    padding: 10px 10px;
+    margin: auto;
+    background: rgba(61, 104, 126, 0.814);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 4px 10px 12px -4px rgba(52, 109, 125, 0.75);
+    -webkit-box-shadow: 4px 10px 12px -4px rgba(52, 109, 125, 0.75);
+    -moz-box-shadow: 4px 10px 12px -4px rgba(52, 109, 125, 0.75);
+    transition: 0.5s;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 2.5%;
+    right: 3%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav {
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
+    .navlinkcontainer {
+        width: 100%;
+    }
+
+    /* .navlinkcontainer ul a {
+        margin-right: 10px;
+    } */
+}

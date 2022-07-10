@@ -16,3 +16,10 @@ a {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
+
+.danger{
+  color: rgb(197, 25, 25);
+  background-color: rgb(255, 185, 185);
+  padding: 10px;
+  border-radius: 10px;
+}
